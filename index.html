@@ -14,7 +14,8 @@ enddate: 2015-12-08
 instructor: ["James Robinson", "Andy Teucher", "Easton White", "James Hiebert", "Jorge Aranda"]
 helper: ["Danielle Claar", "Jamie McDevitt-Irwin", "Kristina Tietjen", "Geoff Osgood"]
 contact: "jamespwr@uvic.ca"
-etherpad: "http://pad.software-carpentry.org/2016-12-07-UVic"    # optional: URL for the workshop Etherpad if there is one
+r-etherpad: "http://pad.software-carpentry.org/2016-12-07-uvic-r"    # optional: URL for the workshop Etherpad if there is one
+p-etherpad: "http://pad.software-carpentry.org/2016-12-07-uvic-python"    # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -250,10 +251,18 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   e.g., '2015-06-10-esu'.
 -->
 {% if page.etherpad %}
-<p id="etherpad">
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+<p id="r-etherpad">
+  <strong>R Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+  R room: we will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+{% endif %}
+
+{% if page.etherpad %}
+<p id="p-etherpad">
+  <strong>Python Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <br/>
+  Python room: we will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
 </p>
 {% endif %}
 
